@@ -1,0 +1,83 @@
+
+body, h1, h2, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00A7A7;
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.quiz-card, .question-card, .result-card {
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    max-width: 500px;
+    display: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+h1, h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+ul.options {
+    list-style: none;
+}
+
+ul.options li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+ul.options input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #00A7A7;
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007E7E;
+}
+
+/* Display the cover card initially */
+.quiz-card {
+    display: block;
+}
+
+/* Style the "Next Question" button */
+.question-card #next-question {
+    display: none;
+}
+
+/* Style the "Quiz Completed" card */
+.result-card {
+    display: none;
+}

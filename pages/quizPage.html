@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kahoot-Style Quiz</title>
+    <link rel="stylesheet" type="text/css" href="../style/quizz.css">
+
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+    .btn{
+        background-color:#1e3240 ;
+        color: #fff;
+    }
+    .quiz-container,.quiz-card{
+        border: 1px solid #1e3240;
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top bg-body clean-navbar navbar-light">
+    <div class="container">
+        <a class="navbar-brand logo" href="#">Lugar</a>
+        <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+            <span class="visually-hidden">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="tips.html">Tips</a></li>
+                <li class="nav-item"><a class="nav-link" href="chat.html">ChatBot</a></li>
+                <li class="nav-item"><a class="nav-link" href="quizPage.html">Test</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="quiz-container mt-5">
+    <div class="quiz-card">
+        <h1 class="quiz-title">Geography Quiz</h1>
+        <button class="btn" id="start-quiz">Start Quiz</button>
+    </div>
+
+    <div class="question-card">
+        <img src="../assets/img/paris.jpg" alt="Image for Question 1">
+        <h2 class="question-title">What city is this in the photo?</h2>
+        <ul class="options d-flex flex-column align-items-start">
+            <li><input type="radio" name="q1" value="Paris"> Paris</li>
+            <li><input type="radio" name="q1" value="Venice"> Venice</li>
+            <li><input type="radio" name="q1" value="Rome"> Rome</li>
+            <li><input type="radio" name="q1" value="Moscow"> Moscow</li>
+        </ul>
+        <button class="btn next-question-button">Next Question</button>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question-card">
+        <img src="../assets/img/venice.jpg" alt="Image for Question 2">
+        <h2 class="question-title">What city is this in the photo?</h2>
+         <ul class="options d-flex flex-column align-items-start">
+            <li><input type="radio" name="q2" value="Paris"> Paris</li>
+            <li><input type="radio" name="q2" value="Venice"> Venice</li>
+            <li><input type="radio" name="q2" value="Tallin"> Tallin</li>
+            <li><input type="radio" name="q2" value="Helsinki"> Helsinki</li>
+        </ul>
+        <button class="btn next-question-button">Next Question</button>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question-card">
+        <img src="../assets/img/rome.jpg" alt="Image for Question 3">
+        <h2 class="question-title">What city is this in the photo?</h2>
+         <ul class="options d-flex flex-column align-items-start">
+            <li><input type="radio" name="q3" value="Berlin"> Berlin</li>
+            <li><input type="radio" name="q3" value="Vilnius"> Vilnius</li>
+            <li><input type="radio" name="q3" value="Rome"> Rome</li>
+            <li><input type="radio" name="q3" value="Saint-Petersburg"> Saint-Petersburg</li>
+        </ul>
+        <button class="btn next-question-button">Next Question</button>
+    </div>
+
+    <div class="question-card">
+        <img src="../assets/img/moscow.jpg" alt="Image for Question 4">
+        <h2 class="question-title">What city is this in the photo?</h2>
+         <ul class="options d-flex flex-column align-items-start">
+            <li><input type="radio" name="q4" value="Ottawa"> Ottawa</li>
+            <li><input type="radio" name="q4" value="Lisbon"> Lisbon</li>
+            <li><input type="radio" name="q4" value="Moscow"> Moscow</li>
+            <li><input type="radio" name="q4" value="Madrid"> Madrid</li>
+        </ul>
+        <button class="btn next-question-button">Next Question</button>
+    </div>
+
+    <div class="question-card">
+        <img src="../assets/img/new_york.jpg" alt="Image for Question 5">
+        <h2 class="question-title">What city is this in the photo?</h2>
+         <ul class="options d-flex flex-column align-items-start">
+            <li><input type="radio" name="q5" value="Rome"> Rome</li>
+            <li><input type="radio" name="q5" value="Riga"> Riga</li>
+            <li><input type="radio" name="q5" value="Helsinki"> Helsinki</li>
+            <li><input type="radio" name="q5" value="New-York"> New-York</li>
+        </ul>
+        <button class="btn next-question-button">Next Question</button>
+    </div>
+
+    <div class="question-card">
+        <img src="../assets/img/copenhagen.jpg" alt="Image for Question 6">
+        <h2 class="question-title">What city is this in the photo?</h2>
+         <ul class="options d-flex flex-column align-items-start">
+            <li><input type="radio" name="q6" value="Warsaw"> Warsaw</li>
+            <li><input type="radio" name="q6" value="Jelgava"> Jelgava</li>
+            <li><input type="radio" name="q6" value="Copenhagen"> Copenhagen</li>
+            <li><input type="radio" name="q6" value="Ottawa"> Ottawa</li>
+        </ul>
+        <button class="btn next-question-button">Next Question</button>
+    </div>
+
+    <div class="question-card">
+        <img src="../assets/img/Almaty.jpg" alt="Image for Question 7">
+        <h2 class="question-title">What city is this in the photo?</h2>
+         <ul class="options d-flex flex-column align-items-start">
+            <li><input type="radio" name="q7" value="Zurich"> Zurich</li>
+            <li><input type="radio" name="q7" value="Almaty"> Almaty</li>
+            <li><input type="radio" name="q7" value="Copenhagen"> Copenhagen</li>
+            <li><input type="radio" name="q7" value="Paris"> Paris</li>
+        </ul>
+        <button class="btn next-question-button">Next Question</button>
+    </div>
+
+    <div class="question-card">
+        <img src="../assets/img/Tokyo.jpg" alt="Image for Question 8">
+        <h2 class="question-title">What city is this in the photo?</h2>
+         <ul class="options d-flex flex-column align-items-start">
+            <li><input type="radio" name="q8" value="Hamburg"> Hamburg</li>
+            <li><input type="radio" name="q8" value="Beijing"> Beijing</li>
+            <li><input type="radio" name="q8" value="Florence"> Florence</li>
+            <li><input type="radio" name="q8" value="Tokyo"> Tokyo</li>
+        </ul>
+        <button class="btn next-question-button">Next Question</button>
+    </div>
+
+    <div class="question-card">
+        <img src="../assets/img/sidney.jpg" alt="Image for Question 9">
+        <h2 class="question-title">What city is this in the photo?</h2>
+         <ul class="options d-flex flex-column align-items-start">
+            <li><input type="radio" name="q9" value="Sidney"> Sidney</li>
+            <li><input type="radio" name="q9" value="Berlin"> Berlin</li>
+            <li><input type="radio" name="q9" value="San Francisco"> San Francisco</li>
+            <li><input type="radio" name="q9" value="Rio de Janeiro"> Rio de Janeiro</li>
+        </ul>
+        <button class="btn next-question-button">Next Question</button>
+    </div>
+
+    <div class="question-card">
+        <img src="../assets/img/London.jpg" alt="Image for Question 9">
+        <h2 class="question-title">What city is this in the photo?</h2>
+         <ul class="options d-flex flex-column align-items-start">
+            <li><input type="radio" name="q9" value="Manchester"> Manchester</li>
+            <li><input type="radio" name="q9" value="Luxembourg"> Luxembourg</li>
+            <li><input type="radio" name="q9" value="London"> London</li>
+            <li><input type="radio" name="q9" value="Leicester"> Leicester</li>
+        </ul>
+        <button class="btn next-question-button">Next Question</button>
+    </div>
+
+
+    <div class="result-card">
+        <h2 class="result-title">Quiz Completed</h2>
+        <p class="result-text">You scored <span id="correct-answers">0</span> out of 10 questions correctly.</p>
+        <ul id="user-answers"></ul>
+    </div>
+</div>
+
+<audio id="quiz-completed-sound" src="../assets/sound/correct.mp3"></audio>
+
+<script src="../assets/js/quizzz.js"></script>
+</body>
+</html>
